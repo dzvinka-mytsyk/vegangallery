@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="space-70"></div>
+    <div class="container">
+
+              <ul class="pager">
+              <li class="previous"><a href="/portfolio.html">← Back to full Portfolio</a></li>
+          </ul>
+          </div>
+
+    <div class="container portfolio-details">
+        <div class="row">
+            <div class="col-md-8 portfolio-single-slide margin-btm-40">
+                <img src="{{page.itemPictureUrl}}" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-single-desc">
+                  <h3>{{ page.title}}</h3>
+
+                  {{ content }}
+
+                </div>
+                <br>
+                <div class="portfolio-side-bar">
+                    <p>
+                        <a href="{{ page.downloadUrl}}" class="btn btn-radius theme-btn-color">Download</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!--portfolio single container end-->
+
+    {% include footer.html %}
+    {% include scripts.html %}
+
+  </body>
+
+</html>

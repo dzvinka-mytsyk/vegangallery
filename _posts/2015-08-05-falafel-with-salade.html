@@ -1,0 +1,50 @@
+---
+layout: default
+menu: blog
+title:  "Falafel with salade"
+date:   2015-08-05 20:12:01
+categories: thoughts
+blogpicurl: /assets/img/blog/falafel-with-salade.jpg
+summary: "This is my first blog post on this web-site. It probably won't be ..."
+author: Dzvinka
+---
+<div class="space-10"></div>
+<div class="container">
+
+          <ul class="pager">
+          <li class="previous"><a href="/blog.html">← Back to all Blog posts</a></li>
+      </ul>
+      </div>
+<div class="container">
+  <div class="row">
+      <div class="col-md-8">
+          <div class="blog-post-section">
+              <div class="blog-post-img">
+                  <img src="{{ page.blogpicurl }}" class="img-responsive" alt="">
+              </div>
+              <div class="blog-post-header">
+                  <h3>{{ page.title}}</h3>
+              </div>
+              <div class="blog-post-info">
+                  <span><a href="#" class="hover-color">by {{ page.author}}</a> | {{ page.date | date: "%b %-d, %Y" }} | <a href="#" class="hover-color">{{page.categories}}</a></span>
+              </div>
+              <div class="blog-post-detail">
+                  <p>
+                    This is my first blog post on this web-site. It probably won't be changed with information too much.
+                    Rather it will be "charged with intention".
+                  </p>
+                  <p>
+                    I will be using this blog to share my latest portfolio items, some new ideas which not yet have goten
+                    into portfolio item form and maybe just my thoughts on IT-related topics.
+                  </p>
+              </div>
+
+          </div><!--blog post section end-->
+
+      </div><!--blog content-->
+       <!--here was sidebar-->
+         {% include post-side-bar.html %}
+  </div>
+
+</div><!--blog post page content end here-->
+<div class="space-70"></div>
