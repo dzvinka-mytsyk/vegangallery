@@ -1802,10 +1802,10 @@ a.carousel-control i {
 }
 
 .footer-copyright {
-  background: #0C0C0C;
+  background: #111;
   border-top: 4px solid #111;
-  margin-top: 40px;
-  padding: 30px 0 30px;
+  /*margin-top: 40px;*/
+  padding: 50px 0 50px;
 }
 
 .footer-nav {
